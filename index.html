@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>for someone special ♡</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background grain -->
+    <div class="grain"></div>
+
+    <main class="book">
+
+        <!-- ========================= -->
+        <!-- PAGE 1 : OPENING -->
+        <!-- ========================= -->
+
+        <section class="page active" id="page1">
+
+            <div class="tiny-label">
+                a little something for you
+            </div>
+
+            <div class="opening">
+
+                <p class="question">
+                    hari apa ya ini?
+                </p>
+
+                <h1>
+                    cieee,<br>
+                    <em>ulang tahun</em>
+                </h1>
+
+                <button class="paper-btn" onclick="startBirthday()">
+                    open this ♡
+                </button>
+
+            </div>
+
+            <div class="page-number">
+                01 / 05
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- PAGE 2 : BIRTH DATE -->
+        <!-- ========================= -->
+
+        <section class="page" id="page2">
+
+            <div class="tiny-label">
+                one little reminder
+            </div>
+
+            <div class="date-card">
+
+                <span class="date-label">
+                    the day you were born
+                </span>
+
+                <!-- GANTI TANGGAL DI SINI -->
+                <div class="date">
+                    22 <span>/</span> SEPTEMBER <span>/</span> 2007
+                </div>
+
+                <p>
+                    SELAMAT ULANG TAHUN M AIXEL RAMADHANI
+                </p>
+
+            </div>
+
+            <button class="next-btn" onclick="nextPage()">
+                next →
+            </button>
+
+            <div class="page-number">
+                02 / 05
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- PAGE 3 : D-DAY -->
+        <!-- ========================= -->
+
+        <section class="page" id="page3">
+
+            <div class="day-page">
+
+                <span class="handwritten">
+                    and finally...
+                </span>
+
+                <h2>
+                    today is<br>
+                    <em>the d-day.</em>
+                </h2>
+
+                <div class="line"></div>
+
+                <!-- GANTI NAMA DI SINI -->
+                <p>
+                    happy birthday,
+                    <span class="person-name">
+                        cell
+                    </span>
+                    ♡
+                </p>
+
+            </div>
+
+            <button class="next-btn" onclick="nextPage()">
+                keep going →
+            </button>
+
+            <div class="page-number">
+                03 / 05
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- PAGE 4 : LETTER -->
+        <!-- ========================= -->
+
+        <section class="page" id="page4">
+
+            <div class="letter-layout">
+
+                <div class="letter-heading">
+
+                    <span class="tiny-label">
+                        a little letter
+                    </span>
+
+                    <h2>
+                        thank you<br>
+                        <em>for being you.</em>
+                    </h2>
+
+                </div>
+
+
+                <div class="letter">
+
+                    <!-- GANTI UCAPAN DI SINI -->
+
+                    <p>
+                        thank you for all the little things
+                        you do, for the laughs, the stories,
+                        the random moments, and for simply
+                        being there.
+                    </p>
+
+                    <p>
+                        mungkin aku nggak selalu bilang,
+                        tapi aku bersyukur pernah punya
+                        banyak momen yang bisa diingat
+                        sama kamu.
+                    </p>
+
+                    <p>
+                        semoga di umur yang baru ini,
+                        ada banyak hal baik yang datang
+                        ke kamu. semoga kamu selalu punya
+                        alasan untuk tersenyum.
+                    </p>
+
+                    <p class="signature">
+                        — from me, cella ♡
+                    </p>
+
+                </div>
+
+            </div>
+
+            <button class="next-btn" onclick="nextPage()">
+                one last thing →
+            </button>
+
+            <div class="page-number">
+                04 / 05
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- PAGE 5 : SCRAPBOOK -->
+        <!-- ========================= -->
+
+        <section class="page" id="page5">
+
+            <div class="gallery-head">
+
+                <span class="tiny-label">
+                    little pieces of you
+                </span>
+
+                <h2>
+                    some memories<br>
+                    <em>worth keeping.</em>
+                </h2>
+
+            </div>
+
+
+            <div class="scrapbook">
+
+
+                <!-- FOTO 1 -->
+
+                <figure class="photo photo-a">
+
+                    <img
+                        src="images/foto1.jpg"
+                        alt="memory 1"
+                        onclick="openPhoto(this)"
+                    >
+
+                    <figcaption>
+                        our first meet
+                    </figcaption>
+
+                </figure>
+
+
+                <!-- FOTO 2 -->
+
+                <figure class="photo photo-b">
+
+                    <img
+                        src="images/foto2.jpg"
+                        alt="memory 2"
+                        onclick="openPhoto(this)"
+                    >
+
+                    <figcaption>
+                        ini pas apa yaa?
+                    </figcaption>
+
+                </figure>
+
+
+                <!-- FOTO 3 -->
+
+                <figure class="photo photo-c">
+
+                    <img
+                        src="images/foto3.jpg"
+                        alt="memory 3"
+                        onclick="openPhoto(this)"
+                    >
+
+                    <figcaption>
+                        always ngonser kalo sama u
+                    </figcaption>
+
+                </figure>
+
+
+            </div>
+
+
+            <div class="final-note">
+
+                <span>
+                    happy birthday, always.
+                </span>
+
+                <span>
+                    ♡
+                </span>
+
+            </div>
+
+
+            <!-- MUSIC BUTTON -->
+
+            <button
+                class="music-toggle"
+                onclick="toggleMusic()"
+                aria-label="Toggle music"
+            >
+                ♫
+            </button>
+
+
+            <!-- GANTI LAGU DI FOLDER MUSIC -->
+
+            <audio id="bgMusic" loop>
+
+                <source
+                    src="music/lagu.mp3.mp3"
+                    type="audio/mpeg"
+                >
+
+            </audio>
+
+
+            <div class="page-number">
+                05 / 05
+            </div>
+
+        </section>
+
+    </main>
+
+    <div class="photo-popup" id="photoPopup" onclick="closePhoto()">
+
+        <span class="close-photo">×</span>
+
+        <img id="popupImage" src="" alt="enlarged photo">
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
